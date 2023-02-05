@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /app
-echo "----- Now deployed web booting your repo ------ " 
-gunicorn app:app & python3 main.py
+echo "https://github.com/anaksetan69/sub1.git"
+pymongo app:app & python3 -m sub1
