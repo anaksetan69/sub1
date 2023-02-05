@@ -13,8 +13,8 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install -y nodejs
 COPY requirements.txt ./requirements.txt
 RUN pip3 install -r requirements.txt
-COPY start.py start.py
+COPY bot.py bot.py
 COPY app.json app.json
 EXPOSE 5000
-RUN chmod +x /app/start.py
-ENTRYPOINT ["./start.py"]
+RUN chmod +x /app/bot.py
+ENTRYPOINT ["./bot.py"]
