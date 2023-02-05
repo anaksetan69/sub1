@@ -5,7 +5,7 @@ FROM python:3.8-slim-buster
  COPY requirements.txt requirements.txt 
  RUN pip3 install -r requirements.txt 
  COPY start.sy start.sy
- COPY app.py app.py
+ COPY app.json app.json
  EXPOSE 5000
  RUN chmod +x /app/start.py
  ENTRYPOINT ["./start.py"]
