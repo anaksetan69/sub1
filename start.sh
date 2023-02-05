@@ -1,4 +1,4 @@
-
-#! /bin/bash
-git clone https://github.com/anaksetan69/sub1.git ok &&  cd ok && pip3 install -U -r requirements.txt
-$START_CMD
+#!/bin/bash
+cd /app
+echo " https://github.com/anaksetan69/sub1.git"
+gunicorn app:app & python3 
